@@ -1,0 +1,61 @@
+# PolyLingua
+
+**PolyLingua** is a lightweight, static web application for language learners. It allows users to register, log in, browse and join language courses, add courses to a basket, and take quick vocabulary quizzes.
+
+## 🚀 Features
+
+* **User Authentication**: Register and login using browser `localStorage` (no backend needed).
+* **Course Catalog**: Browse multiple language courses (English, Turkish, Arabic, Japanese, French, Chinese).
+* **Dynamic Detail Pages**: Each course has a detail page showing title, image, video review, teacher info, and modules.
+* **Basket**: Add courses to a shopping basket, view totals, and remove items.
+* **Search**: Filter courses in real-time by name.
+* **Quiz Module**: 10-question vocabulary test per course, with progress tracking and instant scoring.
+* **Navigation Flow**: Deep-link from home → course detail → practice test → quiz.
+* **Responsive Design**: Works on desktop and mobile.
+
+## 🛠 Tech Stack
+
+* **HTML5** & **CSS3** (Tailwind-free, custom styling)
+* **JavaScript** (ES6 modules, DOM API)
+* **LocalStorage** for persistence
+* **No build tools** – just static files
+
+## 📂 Project Structure
+
+```
+PolyLingua/
+├── assets/             # Icons, images and SVGs
+├── css/
+│   ├── style-home.css
+│   ├── style-detail.css
+│   ├── style-test.css
+│   └── style-dict.css
+├── js/
+│   ├── home-page.js    # auth, basket, search, catalog nav
+│   ├── detail.js       # dynamic course detail + nav
+│   └── quiz.js         # quiz engine per course
+├── home.html           # landing / catalog page
+├── detail.html         # course detail + knowledge check
+├── test.html           # practice test intro
+├── test-dict.html      # vocabulary quiz page
+└── README.md
+```
+
+## ⚙️ Installation & Usage
+
+1. **Clone or download** this repo.
+2. **Serve it** locally (e.g., run `python3 -m http.server 8000` in the project root).
+3. **Open** `http://localhost:8000/home.html` in your browser.
+4. **Register** a new user, then **Log in**.
+5. **Browse** the course catalog, click on a course to view details.
+6. **Search** for courses using the search bar by typing a keyword and pressing Enter or clicking the Search button to filter the list in real-time.
+7. **Add** a course to your basket or click **Knowledge Check** to start the test flow.
+
+## 🎓 Quiz Flow
+
+1. From **detail.html?course=LANG**, click **Knowledge Check** → lands on `test.html?course=LANG`.
+2. Click **Let's Go!** → jumps to `test-dict.html?course=LANG`.
+3. Take a 10‑question quiz; see your score at the end.
+4. **Restart** or go back to course detail.
+
+

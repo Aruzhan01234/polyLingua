@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PolyLingua Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Poppins из Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="styles/style-home.css" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo"><a href="home.html">PolyLingua</a></div>
+
+    <div class="actions">
+        <button id="open-basket"><img class="basket" src="assets/Vector-4.png" alt=""></button>
+        <div class="user-info">
+            <span id="user-name"></span>
+            <button id="logout-btn">Logout</button>
+        </div><!-- вставь свой SVG или <img src="assets/cart.svg"> -->
+      <a href="login.html">
+        <button class="sign-btn">Sign in</button>
+      </a>
+    </div>
+  </header>
+
+    <aside class="basket-sidebar" id="basketSidebar">
+    <header>
+      <h2>Basket</h2>
+      <button class="close-btn" id="closeBasket">&times;</button>
+    </header>
+
+    <div class="basket-content">
+        <!-- Карточка курса -->
+        <div class="course-card">
+          <img src="assets/uk-flag.png" alt="UK Flag" class="card-flag" style="  width: 160px;height: 80px;"/>
+          <h3 class="card-title">English language course</h3>
+          <div class="card-meta">
+            <div class="meta-item">
+              <!-- иконка курсов -->
+              <svg viewBox="0 0 20 20" class="icon">
+                <path d="M4 4h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm1 3v6l5-3-5-3z"/>
+              </svg>
+              <span>34 Courses</span>
+            </div>
+            <div class="meta-item">
+              <!-- иконка времени -->
+              <svg viewBox="0 0 20 20" class="icon">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm.5-8.414V6a.5.5 0 1 0-1 0v5a.5.5 0 0 0 .276.447l3 1.5a.5.5 0 1 0 .447-.894L10.5 9.586z" clip-rule="evenodd"/>
+              </svg>
+              <span>22hr 30min</span>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span class="card-price">$98.0</span>
+            <button class="remove-btn">Remove from basket</button>
+          </div>
+        </div>
+      <!-- Добавь тут ещё .basket-item по потребности -->
+    </div>
+
+    <footer>
+      <div class="totals">
+        <div class="totals-item">
+            <div>Total</div>
+            <div>Sale</div>
+            <div>For Payment</div>
+        </div>
+        <div class="totals-item">
+            <div>98.0$</div>
+            <div>-0.0$</div>
+            <div>98.0$</div>
+        </div>
+      </div>
+      <button class="checkout-btn">Get to Payment</button>
+    </footer>
+  </aside>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>PolyLingua</h1>
+      <h2>Learn, Speak, Travel!</h2>
+      <p>
+        Welcome to PolyLingua – the platform for learning foreign languages!
+        Here, you can easily and enjoyably master English, Spanish, French,
+        and many other languages.
+      </p>
+    </div>
+    <div class="hero-img">
+      <!-- твоя иллюстрация -->
+      <img src="assets/main.png" alt="People studying languages">
+    </div>
+    </section>
+
+      <div class="features">
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="assets/globe.png" alt="Globe icon" width="40" height="40">
+          </div>
+          <div class="feature-content">
+            <h3>Expanded Opportunities</h3>
+            <p>Travel without language barriers and communicate with people worldwide.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="assets/growth.png" alt="Growth icon" width="40" height="40">
+          </div>
+          <div class="feature-content">
+            <h3>Career Growth</h3>
+            <p>Knowing multiple languages opens more job and business opportunities.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <div class="feature-icon">
+            <img src="assets/conections.png" alt="Connections icon" width="40" height="40">
+          </div>
+          <div class="feature-content">
+            <h3>New Connections</h3>
+            <p>Make friends easily and understand different cultures.</p>
+          </div>
+        </div>
+      </div>
+
+    <section class="catalogue">
+        <div class="catalogue-header">
+          <h2>Courses Catalogue</h2>
+          <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+          </div>
+        </div>
+
+        <div class="course-grid">
+                <div class="course-card" data-course="chinese">
+                  <img src="assets/flag-china.png" alt="Chinese">
+                  <div class="course-body">
+                    <div>
+                      <div class="title-align">
+                        <div class="title-price">
+                          <h3>Chinese</h3>
+                          <span>$98</span>
+                        </div>
+                        <div class="raiting"><i>⭐</i><i>⭐</i><i>⭐</i><i>⭐</i><i>☆</i></div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="meta">
+                        <div>
+                            <img class="course-icon" src="assets/time-mini.png">
+                            2hr 30min
+                        </div>
+                        <div>
+                            <img class="course-icon" src="assets/video-mini.png"></img>
+                            34 Courses
+                        </div>
+                      </div>
+                    </div>
+                    <button class="join-btn">Join Course</button>
+                  </div>
+                </div>
+
+          <div class="course-card" data-course="english">
+                  <a href="detail.html"><img src="assets/flag-uk.png" alt="Chinese"></a>
+                  <div class="course-body">
+                    <div>
+                      <div class="title-align">
+                        <div class="title-price">
+                          <h3>English</h3>
+                          <span>$98</span>
+                        </div>
+                        <div class="raiting"><i>⭐</i><i>⭐</i><i>⭐</i><i>⭐</i><i>☆</i></div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="meta">
+                        <div>
+                            <img class="course-icon" src="assets/time-mini.png">
+                            2hr 30min
+                        </div>
+                        <div>
+                            <img class="course-icon" src="assets/video-mini.png"></img>
+                            34 Courses
+                        </div>
+                      </div>
+                    </div>
+                    <button class="join-btn">Join Course</button>
+                  </div>
+                </div>
+
+          <div class="course-card" data-course="turkish">
+                  <img src="assets/flag-turkey.png" alt="Chinese">
+                  <div class="course-body">
+                    <div>
+                      <div class="title-align">
+                        <div class="title-price">
+                          <h3>Turkish</h3>
+                          <span>$98</span>
+                        </div>
+                        <div class="raiting"><i>⭐</i><i>⭐</i><i>⭐</i><i>⭐</i><i>☆</i></div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="meta">
+                        <div>
+                            <img class="course-icon" src="assets/time-mini.png">
+                            2hr 30min
+                        </div>
+                        <div>
+                            <img class="course-icon" src="assets/video-mini.png"></img>
+                            34 Courses
+                        </div>
+                      </div>
+                    </div>
+                    <button class="join-btn">Join Course</button>
+                  </div>
+                </div>
+          <div class="course-card" data-course="arabic">
+                  <img src="assets/flag-arab.png" alt="Chinese">
+                  <div class="course-body">
+                    <div>
+                      <div class="title-align">
+                        <div class="title-price">
+                          <h3>Arabic</h3>
+                          <span>$98</span>
+                        </div>
+                        <div class="raiting"><i>⭐</i><i>⭐</i><i>⭐</i><i>⭐</i><i>☆</i></div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="meta">
+                        <div>
+                            <img class="course-icon" src="assets/time-mini.png">
+                            2hr 30min
+                        </div>
+                        <div>
+                            <img class="course-icon" src="assets/video-mini.png"></img>
+                            34 Courses
+                        </div>
+                      </div>
+                    </div>
+                    <button class="join-btn">Join Course</button>
+                  </div>
+                </div>
+          <div class="course-card" data-course="japanese">
+                  <img src="assets/flag-japan.png" alt="Chinese">
+                  <div class="course-body">
+                    <div>
+                      <div class="title-align">
+                        <div class="title-price">
+                          <h3>Japanese</h3>
+                          <span>$98</span>
+                        </div>
+                        <div class="raiting"><i>⭐</i><i>⭐</i><i>⭐</i><i>⭐</i><i>☆</i></div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="meta">
+                        <div>
+                            <img class="course-icon" src="assets/time-mini.png">
+                            2hr 30min
+                        </div>
+                        <div>
+                            <img class="course-icon" src="assets/video-mini.png"></img>
+                            34 Courses
+                        </div>
+                      </div>
+                    </div>
+                    <button class="join-btn">Join Course</button>
+                  </div>
+                </div>
+          <div class="course-card" data-course="french">
+                  <img src="assets/flag-france.png" alt="Chinese">
+                  <div class="course-body">
+                    <div>
+                      <div class="title-align">
+                        <div class="title-price">
+                          <h3>French</h3>
+                          <span>$98</span>
+                        </div>
+                        <div class="raiting"><i>⭐</i><i>⭐</i><i>⭐</i><i>⭐</i><i>☆</i></div>
+                      </div>
+                      <div class="line"></div>
+                      <div class="meta">
+                        <div>
+                            <img class="course-icon" src="assets/time-mini.png">
+                            2hr 30min
+                        </div>
+                        <div>
+                            <img class="course-icon" src="assets/video-mini.png"></img>
+                            34 Courses
+                        </div>
+                      </div>
+                    </div>
+                    <button class="join-btn">Join Course</button>
+                  </div>
+                </div>
+
+        </div>
+      </section>
+
+    <section class="faq">
+        <h2>FAQ</h2>
+        <div class="faq-item">
+            <button class="faq-question">
+                <p>How to learn a new language quickly?</p>
+                <img src="assets/image.png">
+            </button>
+            <div class="faq-answer">
+                <p>Some tips to learn a language quickly include immersive practice, using flashcards, and regular conversation with native speakers.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                <p>What are the most effective learning methods?</p>
+                <img src="assets/image.png">
+            </button>
+            <div class="faq-answer">
+                <p>Effective methods include spaced repetition, active recall, and learning through context rather than memorization.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                <p>How long does it take to learn a language?</p>
+                <img src="assets/image.png">
+            </button>
+            <div class="faq-answer">
+                <p>The time it takes varies depending on the language and your dedication, but consistent practice over months can show noticeable results.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                <p>Is it necessary to learn grammar?</p>
+                <img src="assets/image.png">
+            </button>
+            <div class="faq-answer">
+                <p>While not essential for basic communication, grammar helps structure sentences properly and leads to more natural speech.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">
+                <p>Which language is best to learn first?</p>
+                <img src="assets/image.png">
+            </button>
+            <div class="faq-answer">
+                <p>Choose a language that interests you or is useful for your goals. English is a universal choice, but select based on your needs.</p>
+            </div>
+        </div>
+    </section>
+
+<script src="JS/home-page.js"></script>
+</body>
+</html>

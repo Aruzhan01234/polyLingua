@@ -1,0 +1,452 @@
+:root {
+      --purple: #5c2a82;
+      --text-dark: #1a1a1a;
+      --text-light: #555;
+      --bg-light: #f9f9f9;
+    }
+a {
+    text-decoration: none;
+     font-size: 28px; font-weight: 700; color: var(--purple);
+}
+
+    * {
+        margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;
+    }
+    body {
+        background: var(--bg-light); color: var(--text-dark);
+    }
+    header {
+      background: #fff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+
+.video-wrapper iframe {
+
+  width: 100%;
+  height: 100%;
+}
+    .logo { font-size: 28px; font-weight: 700; color: var(--purple); }
+    .actions { display: flex; align-items: center; }
+    .actions svg {
+      width: 24px; height: 24px;
+      fill: #333;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .actions button{
+        border: none;
+    }
+
+    .sign-btn {
+      padding: 10px 24px;
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+        font-size: 16px;
+    }
+
+/* CSS */
+.course-card-head {
+  display: flex;
+  justify-content: space-between;
+    gap: 30px;
+    margin: 50px auto;
+  align-items: center;
+  max-width: 1200px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.course-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+    max-width: 50%;
+  gap: 12px;
+    padding-left: 50px;
+}
+
+.course-title {
+  margin: 0;
+  font-size: 36px;
+    font-weight: normal;
+  color: #222;
+}
+
+.course-price-rating {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+    margin-bottom: 80px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #4A148C;
+}
+
+.stars {
+  font-size: 2rem;
+  color: #f5c518; /* золотой для рейтинга */
+}
+
+.course-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 8px;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  color: #555;
+}
+
+.meta-icon {
+  font-size: 1.1rem;
+}
+
+.join-btn {
+  margin-left: auto;
+  padding: 10px 16px;
+  background: #4A148C;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s;
+}
+
+.btn-add:hover {
+  background: #6A1B9A;
+}
+
+.course-flag img {
+    margin-left: 30px;
+  height: 330px;
+  width: 550px;
+  border-radius: 10px;
+}
+
+
+
+
+.video-review-section {
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+/* Общие стили секций */
+.section-title {
+  text-align: left;
+  width: 100%;
+  font-size: 32px;
+  color: var(--purple);
+  margin-bottom: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Video */
+.video-wrapper {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 16/9;
+  background: #111;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.video-embed {
+  width: 100%;
+  height: 100%;
+}
+
+
+.teacher-section {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+/* Teacher Card */
+.teacher-card {
+      margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.teacher-thumb {
+  position: relative;
+  flex-shrink: 0;
+  width: 200px;
+  height: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.teacher-thumb img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.teacher-details {
+  flex: 1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.teacher-name {
+  margin-top: 30px;
+  font-size: 28px;
+  color: var(--purple);
+}
+
+.teacher-stats {
+  list-style: none;
+  padding: 0;
+  margin-right: 20px;
+  color: #333;
+  font-size: 18px;
+}
+
+.teacher-stats li + li {
+  margin-top: 6px;
+}
+/* Центрирование секций */
+.video-review-section,
+.teacher-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* отступы сверху/снизу по вкусу */
+  padding: 20px 0;
+}
+
+
+/* Центрируем сам видео-плеер */
+.video-wrapper {
+  margin: 0 auto 40px; /* авто-боковые отступы + снизу 40px */
+}
+
+   /* USER Section Container */
+    .user-feedback-section {
+        margin: 100px auto;
+    }
+
+    .user-container {
+        padding: 0 150px;
+    }
+
+
+.header h1{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--purple);
+    margin-bottom: 20px;
+}
+    /* Testimonials Grid */
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .testimonial-card {
+        color: #333;
+        background-color: #fff;
+        padding: 20px 30px;
+        text-align: left;
+        border-radius: 15px;
+        transition: transform 0.3s ease;
+        transition: background-color 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+        transform: translateY(-5px);
+        background-color: var(--purple);
+        color: white;
+    }
+
+    .photo-name {
+        display: flex;
+        margin-bottom: 10px;
+    }
+
+    .testimonial-card h3 {
+        font-size: 24px;
+        margin: 10px;
+    }
+
+    .testimonial-card p {
+        font-size: 18px;
+        margin-top: 10px;
+        width: 350px;
+    }
+
+    /* Responsive Layout */
+    @media (max-width: 768px) {
+        .testimonials {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .testimonials {
+            grid-template-columns: 1fr;
+        }
+    }
+
+  .faq {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 1400px;
+    margin: 60px auto;
+}
+
+.faq-header h2 {
+    margin-top: 10px;
+    font-size: 36px;
+    text-align: left;
+    color: var(--purple);
+    margin-bottom: 20px;
+}
+
+.faq-header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.faq-header .btn {
+      padding:20px 50px;
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+        font-size: 18px;
+}
+
+.faq-item {
+    margin: 10px 0;
+    max-width: 1200px;
+    margin-left: 80px;
+}
+
+.faq-question img {
+    height: 30px;
+    transition: transform 0.3s ease; /* Smooth transition for the rotation */
+}
+
+.faq-question img.reverse {
+    transform: rotate(180deg); /* Rotate the image 180 degrees when the class is added */
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    background-color: white;
+    /*border: lightgray 3px solid;*/
+    border: none;
+    padding: 30px 40px 30px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 25px;
+
+    transition: background-color 0.3s;
+}
+
+.faq-question:hover {
+
+}
+
+.faq-answer {
+    display: none;
+    background-color: #fff;
+    width: 100%;
+    padding: 20px 40px;
+    margin-top: -50px;
+    border-top: white 50px solid;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.faq-answer p {
+    margin: 0;
+}
+
+
+    /* Кнопка открытия корзины */
+    #open-basket {
+      background: #fff;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+        width: 60px;
+        margin-right: 50px;
+        margin-top: 10px;
+    }
+
+.user-info {
+  display: none;      /* по умолчанию скрыто */
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#logout-btn {
+      padding: 10px 24px;
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+        font-size: 16px;
+}
+
+#logout-btn:hover {
+  background: #6a1b9a;
+}
+
+#user-name {
+    font-size: 18px;
+    margin-right: 20px;
+  font-weight: 600;
+  color: #333;
+
+}
+.remove-btn:hover {
+  background: #d32f2f;
+  color: #fff;
+}

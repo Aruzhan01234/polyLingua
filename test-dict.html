@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PolyLingua Dictionary Test</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="styles/style-dict.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <div class="logo">PolyLingua</div>
+  <div class="actions">
+    <a id="back-btn" href="#">
+      <button class="cross-btn">
+        <img src="assets/close-fill.png" alt="Close">
+      </button>
+    </a>
+  </div>
+</header>
+
+  <section class="quiz-section">
+    <div class="quiz-card">
+      <div class="quiz-body">
+        <!-- Progress bar -->
+        <div id="quiz-progress">Question 1 of 10</div>
+
+        <!-- Question + Word -->
+        <p class="quiz-question">Is this a real English word?</p>
+        <p class="quiz-word">undistrict</p>
+
+        <!-- Buttons (no <a>!) -->
+        <div class="quiz-actions">
+          <button class="btn btn-yes">
+            <img src="assets/Vector-17.png" alt="Yes">
+            <span class="label">Yes</span>
+          </button>
+          <button class="btn btn-no">
+            <img src="assets/Vector-47.png" alt="No">
+            <span class="label">No</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Your quiz engine -->
+  <script src="JS/quiz.js"></script>
+</body>
+</html>

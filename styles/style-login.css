@@ -1,0 +1,224 @@
+:root {
+      --purple: #5c2a82;
+      --text-dark: #1a1a1a;
+      --text-light: #555;
+      --bg-light: #f9f9f9;
+    }
+a {
+    text-decoration: none;
+     font-size: 28px; font-weight: 700; color: var(--purple);
+}
+    * {
+        margin:0; padding:0; box-sizing:border-box; font-family:'Poppins', sans-serif;
+    }
+    body {
+        background: var(--bg-light); color: var(--text-dark);
+    }
+    header {
+      background: #fff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .basket {
+        height: 30px;
+        margin-right: 30px;
+        cursor: pointer;
+    }
+
+    .logo { font-size: 28px; font-weight: 700; color: var(--purple); }
+    .actions { display: flex; align-items: center; }
+    .actions svg {
+      width: 24px; height: 24px;
+      fill: #333;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+    .actions button{
+        border: none;
+    }
+
+    .sign-btn {
+      padding: 10px 24px;
+      background: var(--purple);
+      color: #fff;
+      border: none;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+        font-size: 16px;
+    }
+
+    .hero-img img {
+      height: 600px;
+    }
+
+
+    /* --- общий фон и центровка --- */
+.login-section {
+  min-height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+   margin: 0 auto;
+   max-width: 1400px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* --- карточка --- */
+.login-card {
+  padding: 0px 32px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* заголовок */
+.login-title {
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 0 24px;
+  font-size: 52px;
+  color: var(--purple);
+}
+
+/* форма */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-form input {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.login-form input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.forgot-link {
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--purple);
+  text-decoration: none;
+}
+
+.btn-login {
+  margin-top: 8px;
+  padding: 12px 0;
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.btn-login:hover {
+  background: var(--purple);
+}
+
+/* форма */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.register-form input {
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.register-form input:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+
+.btn-register {
+  margin-top: 8px;
+  padding: 12px 0;
+  background: var(--purple);
+  color: #fff;
+  border: none;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.btn-login:hover {
+  background:var(--purple);
+}
+
+
+
+/* социальные кнопки */
+.social-login {
+  margin-top: 32px;
+}
+
+.separator {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.separator span {
+  background: #faf5eb;
+  padding: 0 12px;
+  color: #aaa;
+  font-size: 0.85rem;
+  position: relative;
+  z-index: 1;
+}
+
+.separator::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #ddd;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.icons a {
+  font-size: 1.4rem;
+  color: #555;
+  transition: color .2s;
+}
+
+.icons a:hover {
+  color: var(--purple);
+}
+
+.error-msg {
+  color: #c62828;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  text-align: center;
+}
